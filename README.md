@@ -7,7 +7,8 @@
 cd /media/{YourUserName}/IRAF for Ubuntu 16.04/
 sudo sh install.sh
 ```
-The default options for most of the questions it asks are all pretty good. Once that's all done, you can unmount the installation image (right click the drive in your sidebar and click "unmount") and delete the ISO file.  
+The default options for most of the questions it asks are all pretty good. Once that's all done, you can unmount the installation image (right click the drive in your sidebar and click "unmount") and delete the ISO file.
+
 3) Now we want to configure IRAF for your user account. In a terminal, execute the following:
 ```
 cd ~
