@@ -1,13 +1,13 @@
 # pysalt-on-ubuntu
 **Instructions for getting Python, IRAF, DS9, Pyraf, and PySALT set up on a fresh installation of Ubuntu 16.04**
 
-1) First, we're going to install Python. I'm a fan of the "Anaconda" distribution available [here](https://www.continuum.io/downloads). You probably want version 2.X, not 3.X. Download the anaconda installer and follow the installation instructions on that website. The default options in the installer are pretty good and you probably don't want to change any of them.
+1) First, we're going to install Python. I'm a fan of the "Anaconda" distribution available [here](https://www.continuum.io/downloads). You probably want version 2.X, not 3.X. Download the anaconda installer and follow the installation instructions on that website. The default options in the installer are pretty good and you probably don't want to change any of them.  
 2) Next, we want to install IRAF, Pyraf, and DS9. There's a handy install script [here](http://www.astrosen.unam.mx/~favilac/IRAF/) that someone made for this purpose. The "16.04" folder is probably what you want. Download that installer and find it in your file explorer. Right click and choose Open With -> Disk Image Mounter. Then, in a terminal:
 ```
 cd /media/{YourUserName}/IRAF for Ubuntu 16.04/
 sudo sh install.sh
 ```
-The default options for most of the questions it asks are all pretty good. Once that's all done, you can unmount the installation image (right click the drive in your sidebar and click "unmount") and delete the ISO file.
+The default options for most of the questions it asks are all pretty good. Once that's all done, you can unmount the installation image (right click the drive in your sidebar and click "unmount") and delete the ISO file.  
 3) Now we want to configure IRAF for your user account. In a terminal, execute the following:
 ```
 cd ~
@@ -27,7 +27,7 @@ And change it to:
 ```
 #chkupdate
 ```
-For me, it's line 142 in the file.
+For me, it's line 142 in the file.  
 4) There's a lot of other packages that PySALT needs (or supposedly needs) to work properly. From a terminal, execute the following:
 ```
 sudo apt-get update
@@ -50,6 +50,7 @@ reset 	pysalt 		= extern$pysalt/
 reset 	pysalt.pkg 	= pysalt$pysalt.cl
 ```
 And in the second section, add this line:
+```
 			  ,pysalt$lib/helpdb.mip\
 ```
 And then save the file. Now IRAF is configured to know about PySALT!
