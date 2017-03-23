@@ -34,7 +34,7 @@ For me, it's line 142 in the file.
 ```
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install gfortran liblapack-dev libblas-dev g++ libfreetype6-dev  tk8.5 tk8.5-dev tcl8.5 tcl8.5-dev texlive dvipng tk libqt4-dev lsb-release tcsh sharutils lynx libc6-dev libncurses5-dev libf2c2 python-urwid libx11-dev libcfitsio3-dev pgplot5 libxt-dev libxaw7-dev openjdk-6-source openjdk-6-jre libmotif-dev unzip fort77 cfortran gv cups-bsd cups-common cups mc saods9
+sudo apt-get install gfortran liblapack-dev libblas-dev g++ libfreetype6-dev  tk8.5 tk8.5-dev tcl8.5 tcl8.5-dev texlive dvipng tk libqt4-dev lsb-release tcsh sharutils lynx libc6-dev libncurses5-dev libf2c2 python-urwid libx11-dev libcfitsio3-dev pgplot5 libxt-dev libxaw7-dev libmotif-dev unzip fort77 cfortran gv cups-bsd cups-common cups mc saods9
 pip install --upgrade pip
 pip install pyfits pyds9 pyspectrograph aplpy pyraf pyephem astropy ccdproc pywcs
 conda install pyqt=4
