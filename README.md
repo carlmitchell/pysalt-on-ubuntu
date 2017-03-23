@@ -28,7 +28,8 @@ And change it to:
 ```
 #chkupdate
 ```
-For me, it's line 142 in the file.  
+For me, it's line 142 in the file.
+
 4) There's a lot of other packages that PySALT needs (or supposedly needs) to work properly. From a terminal, execute the following:
 ```
 sudo apt-get update
@@ -55,6 +56,7 @@ And in the second section, add this line:
 			  ,pysalt$lib/helpdb.mip\
 ```
 And then save the file. Now IRAF is configured to know about PySALT!
+
 6) Finally, let's test to see if things worked. In a terminal, type:
 ```
 pyraf
