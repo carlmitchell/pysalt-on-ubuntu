@@ -18,7 +18,7 @@ mkiraf
 ```
 This will great a file called "login.cl" which is a startup script for IRAF linked to your account. Now there's a particular line of that file we want to comment out. This line causes IRAF to check for updates from the NOAO server every time it's opened. Unfortunately, if the NOAO servers are down, it makes IRAF refuse to load. Open the file for editing:
 ```
-gedit chkupdate
+gedit login.cl
 ```
 Locate the line that reads:
 ```
